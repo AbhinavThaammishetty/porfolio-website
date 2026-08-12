@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhinav | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color:white;
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    section{
+      padding:80px 0;
+    }
+
+    .glass{
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(12px);
+      border:1px solid rgba(255,255,255,0.15);
+      border-radius:20px;
+      box-shadow:0 8px 32px rgba(0,0,0,0.3);
+      transition:0.3s ease;
+    }
+
+    .glass:hover{
+      transform: translateY(-8px);
+      box-shadow:0 12px 40px rgba(0,0,0,0.45);
+    }
+
+    nav{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      padding:20px 0;
+      background: rgba(15,23,42,0.7);
+      backdrop-filter: blur(10px);
+    }
+
+    nav .container{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    nav h2{
+      font-size:28px;
+      font-weight:600;
+    }
+
+    nav ul{
+      display:flex;
+      gap:25px;
+      list-style:none;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:white;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    .hero{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      min-height:90vh;
+    }
+
+    .hero-content{
+      padding:50px;
+      width:100%;
+      max-width:800px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    .hero h3{
+      color:#38bdf8;
+      margin-bottom:20px;
+      font-weight:500;
+    }
+
+    .hero p{
+      line-height:1.8;
+      color:#d1d5db;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:12px 28px;
+      border-radius:30px;
+      text-decoration:none;
+      background:#38bdf8;
+      color:#0f172a;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:40px;
+      margin-bottom:50px;
+    }
+
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+    }
+
+    .skill-card{
+      padding:30px;
+      text-align:center;
+    }
+
+    .skill-card h3{
+      margin-bottom:15px;
+      color:#38bdf8;
+    }
+
+    .education-card,
+    .contact-card{
+      padding:40px;
+      line-height:2;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#cbd5e1;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      nav .container{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h2>Abhinav</h2>
+
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content glass">
+
+      <h2>THAAMMISHETTY ABHINAV</h2>
+
+      <h3>Computer Science Engineering Student | Data Science</h3>
+
+      <p>
+        Highly motivated and detail-oriented B-Tech Computer Science Engineering student
+        specializing in Data Science. Passionate about problem-solving, machine learning,
+        data analysis, and building impactful solutions using technology.
+      </p>
+
+      <a href="#contact" class="btn">Contact Me</a>
+
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card glass">
+          <h3>Programming</h3>
+          <p>Python, C, Java</p>
+        </div>
+
+        <div class="skill-card glass">
+          <h3>Core Concepts</h3>
+          <p>DSA, OOPS, DBMS, OS</p>
+        </div>
+
+        <div class="skill-card glass">
+          <h3>Data Tools</h3>
+          <p>Power BI, MySQL, Excel</p>
+        </div>
+
+        <div class="skill-card glass">
+          <h3>Web Technologies</h3>
+          <p>HTML, CSS, JavaScript</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+
+      <h2 class="section-title">Education</h2>
+
+      <div class="education-card glass">
+
+        <h3>B.Tech – Computer Science & Engineering (Data Science)</h3>
+        <p>Vaagdevi Engineering College | 2024 – 2028</p>
+
+        <br>
+
+        <h3>Pre-university college(Class XII)</h3>
+        <p>KLE’s Independent PU College</p>
+
+        <br>
+
+        <h3>Secondary School (Class X)</h3>
+        <p>Florence High School</p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-card glass">
+
+        <p><strong>Phone:</strong> +91 9880864135</p>
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:abhinavthaammishetty@gmail.com" style="color:#38bdf8;">
+            abhinavthaammishetty@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/abhinavthaammishetty"
+             target="_blank"
+             style="color:#38bdf8;">
+             linkedin.com/in/abhinavthaammishetty
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Abhinav | Portfolio Website
+  </footer>
+
+</body>
+</html>
